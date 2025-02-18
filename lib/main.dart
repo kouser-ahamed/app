@@ -12,27 +12,27 @@ class LabClass05 extends StatelessWidget {
           title: Text("Basic Flutter UI - 02"),
         ),
         body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              "Hi ,",
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
             ),
-            Text(
-              "This is ",
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
             ),
-            Text(
-              "Flutter",
-              style: TextStyle(
-                color: Colors.yellow,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
+            ),
+            Icon(
+              Icons.star,
+              size: 50,
+            ),
+            Icon(
+              Icons.star_outline,
+              size: 50,
             ),
           ],
         ),
