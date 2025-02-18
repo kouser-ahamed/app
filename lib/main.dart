@@ -5,6 +5,9 @@ class LabClass05 extends StatelessWidget {
 /*
 main axis alignment
 cross "     "
+
+overflow handeling
+1:
 */
   @override
   Widget build(BuildContext context) {
@@ -14,38 +17,21 @@ cross "     "
         appBar: AppBar(
           title: Text("Basic Flutter UI - 02"),
         ),
-        body: Container(
-          height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            // crossAxisAlignment: CrossAxisAlignment.cen,
-            children: [
-              Icon(
-                Icons.star,
-                size: 50,
-                color: Colors.yellow,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-                color: Colors.yellow,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-                color: Colors.yellow,
-              ),
-              Icon(
-                Icons.star,
-                size: 50,
-                color: Colors.yellow,
-              ),
-              Icon(
-                Icons.star_outline,
-                size: 50,
-                color: Colors.yellow,
-              ),
-            ],
+        body: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: SizedBox(
+            // height: double.infinity,
+            height: 600,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: List.generate(
+                  1000,
+                  (indez) => Icon(
+                        Icons.star,
+                        size: indez * 1.0,
+                      )),
+            ),
           ),
         ),
       ),
