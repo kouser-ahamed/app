@@ -30,7 +30,7 @@ class LabClass05 extends StatelessWidget {
             Text(
               "Flutter",
               style: TextStyle(
-                color: Colors.red,
+                color: Colors.yellow,
                 fontSize: 30,
               ),
             ),
